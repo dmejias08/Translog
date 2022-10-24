@@ -26,5 +26,5 @@ nombre([manzana|S],S).
 
 verbo([Y|S], S):-traducir([Y|S]).
 
-traducir(S)
+traducir(S).
 traducir_verbo(come, eat).

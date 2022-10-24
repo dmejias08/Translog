@@ -49,4 +49,6 @@ pronombre(plural,masculino,segunda,[vosotros|S],S,[you|T],T).
 pronombre(plural,masculino,tercera,[ellos|S],S,[they|T],T).
 pronombre(plural,femenino,primera,[nosotras|S],S,[we|T],T).
 pronombre(plural,femenino,segunda,[vosotras|S],S,[you|T],T).
-pronombre(plural,femenino,tercera,[ellas|S],S,[they|T],T).
+pronombre(plural,femenino,tercera,[X|S],S,[Y|T],T):-traducir(X,Y).
+
+traducir(ellas, they).
