@@ -34,7 +34,7 @@ sustantivo(sus(s3),m, tercera, plural) --> ["perros"]. %ya
 sustantivo(sus(s4), f, tercera, singular) --> ["pasta"]. %ya
 sustantivo(sus(s5), f, tercera, singular) --> ["camisa"]. %ya
 sustantivo(sus(s6),m, tercera, plural) --> ["libros"]. %ya
-sustantivo(sus(s6),m, tercera, singular) --> ["perro"]. %ya
+sustantivo(sus(s7),m, tercera, singular) --> ["perro"]. %ya
 
 verbo(v(v2), primera, singular) --> ["camino"]. %ya
 verbo(v(v2), primera, plural) --> ["caminamos"]. %ya
@@ -61,8 +61,8 @@ verbo(v(v8), primera, singular) --> ["soy"]. %ya
 verbo(v(v8), primera, plural) --> ["somos"]. %ya
 verbo(v(v8), segunda, singular) --> ["es"]. %ya
 verbo(v(v8), segunda, plural) --> ["son"]. %ya
-verbo(v(v8), tercera, plural) --> ["es"]. %ya
-verbo(v(v7), tercera, singular) --> ["son"]. %ya
+verbo(v(v8), tercera, plural) --> ["son"]. %ya
+verbo(v(v7), tercera, singular) --> ["es"]. %ya
 
 signo_inicio(si(si1)) --> ["¡"].
 signo_inicio(si(si2)) --> ["¿"].
@@ -77,3 +77,15 @@ preposiciones(p(p4)) --> ["de"].
 preposiciones(p(p5)) --> ["en"].
 preposiciones(p(p6)) --> ["sobre"].
 
+adjetivo(adj(adj1), f, singular) --> ["roja"].
+adjetivo(adj(adj1), m, singular) --> ["rojo"].
+adjetivo(adj(adj1), f, plural) --> ["rojas"].
+adjetivo(adj(adj1), m, plural) --> ["rojos"].
+adjetivo(adj(adj2), f, singular) --> ["bonita"].
+adjetivo(adj(adj2), m, singular) --> ["bonito"].
+adjetivo(adj(adj2), f, plural) --> ["bonitas"].
+adjetivo(adj(adj2), m, plural) --> ["bonitos"].
+adjetivo(adj(adj3), f, singular) --> ["fea"].
+adjetivo(adj(adj3), m, singular) --> ["feo"].
+adjetivo(adj(adj3), f, plural) --> ["feas"].
+adjetivo(adj(adj3), m, plural) --> ["feos"].

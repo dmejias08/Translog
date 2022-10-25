@@ -14,6 +14,13 @@ subjet(suj(su4), plural) --> ["they"].
 subjet(suj(su5), singular) --> ["she"].
 subjet(suj(su6), singular) --> ["he"].
 
+pronoun(suj(su1), _) --> ["mine"].
+pronoun(suj(su2), plural) --> ["our"].
+pronoun(suj(su3), plural) --> ["yours"].
+pronoun(suj(su4), plural) --> ["them"].
+pronoun(suj(su5), singular) --> ["her"].
+pronoun(suj(su6), singular) --> ["his"].
+
 noun(sus(s1),singular) --> ["school"]. 
 noun(sus(s2),singular) --> ["book"]. 
 noun(sus(s3),plural) --> ["dogs"]. 
@@ -45,3 +52,7 @@ preposition(p(p3)) --> ["with"].
 preposition(p(p4)) --> ["of"].
 preposition(p(p5)) --> ["on"].
 preposition(p(p6)) --> ["about"].
+
+adjective(adj(adj1)) --> ["red"].
+adjective(adj(adj2)) --> ["pretty"].
+adjective(adj(adj3)) --> ["ugly"].

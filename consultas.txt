@@ -1,42 +1,52 @@
 hello -> hola ** no puede pasar a pura vida 
 pura vida -> hello 
-
 una vida pura -> a life pure
+
+
 
 como lo cambio si el orden es invertido?
 
 no me esta sirviendo el signo inicial 
 
-objetivo de hoy, 
+objetivos
 
 crear oraciones, nuevas con nuevas estructuras
 
 poblar la base de datos 
 
-* meter oraciones con preposiciones
 
-ella va hacia la escuela  she goes to the school 
-
-la comida esta en la mesa  the food is on the table #si tenemos tiempo
 
 * meter preguntas 
 * saludos 
-* poblar la base de datos
-    - articulos 
-    - preposiciones
-    - verbos 
-    - pronombres 
+* oraciones con
+    - articulos listo
+    - preposiciones listo
+    - verbos listo
+    - pronombres  listo
     - auxiliares 
-    - adjetivos 
-    - adverbios 
+    - adjetivos  listo
+
+
 
 
 Por si tenemos tiempo:
 - Oraciones mas complejas como Maria se come una pizza
 - oracion y/o/pero oracion
 * signos de puntacion
+    - adverbios 
+
+
+
+
+oraciones que se me ocurren en el momento 
+
+ella va hacia la escuela  she goes to the school 
+
+la comida esta en la mesa  the food is on the table #si tenemos tiempo
 
 
 tratamiento de verbo to be
 pendiente adjetivos en ingles
-
+oraciones de pertenencia 
+Nosotros hablamos de ella
+We talk about her
