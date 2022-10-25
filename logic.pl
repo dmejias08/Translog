@@ -26,7 +26,7 @@ consulta_leng(LENGUAJE):-
 
 consulta_leng(LENGUAJE):-
     clasificacion(LENGUAJE,2),
-    write("Write down phrase"),
+    writeln("Write down phrase"),
     read(FRASE),
     string_lower(FRASE, FRASE_MIN),
     split_string(FRASE_MIN, " ", " ", LIST),

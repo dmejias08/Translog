@@ -1,0 +1,14 @@
+hello -> hola ** no puede pasar a pura vida 
+pura vida -> hello 
+
+una vida pura -> a pure life 
+
+como lo cambio si el orden es invertido?
+
+no me esta sirviendo el signo inicial 
+
+objetivo de hoy, 
+
+crear oraciones, nuevas con nuevas estructuras
+
+poblar la base de datos 
