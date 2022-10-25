@@ -2,6 +2,7 @@ gretting(sal(f1), id1) --> ["hello"].
 gretting(sal(f2), id2) --> ["hello"].
 
 modifier(a(art)) --> ["the"].
+modifier(a(art1)) --> ["a"].
 
 subjet(suj(su1), _) --> ["i"].
 subjet(suj(su2), plural) --> ["we"].
@@ -10,11 +11,10 @@ subjet(suj(su4), plural) --> ["they"].
 subjet(suj(su5), singular) --> ["she"].
 subjet(suj(su6), singular) --> ["he"].
 
-
 noun(sus(s1),singular) --> ["stone"]. 
 noun(sus(s2),singular) --> ["paper"]. 
 noun(sus(s3),plural) --> ["scissors"]. 
-noun(sus(s4), _) --> ["pasta"]. 
+noun(sus(s4), singular) --> ["pasta"]. 
 
 verb(v(v1),singular) --> ["walks"].
 verb(v(v2),plural) --> ["walk"].

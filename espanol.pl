@@ -18,10 +18,11 @@ sujeto(suj(su6), m, tercera, singular) --> ["él"]. %ya
 sujeto(suj(su4), f, tercera, plural) --> ["ellas"]. %ya
 sujeto(suj(su4), m, tercera, plural) --> ["ellos"]. %ya
 
+% sustantivo( IDEN, GEN, PERS, NUM)                         
 sustantivo(sus(s1),f, tercera, singular) --> ["piedra"]. %ya
-sustantivo(sus(s2),m, tecera, singular) --> ["papel"]. %ya
+sustantivo(sus(s2),m, tercera, singular) --> ["papel"]. %ya
 sustantivo(sus(s3),f, tercera, plural) --> ["tijeras"]. %ya
-sustantivo(sus(s4), _, _, _) --> ["pasta"]. %ya
+sustantivo(sus(s4), f, tercera, singular) --> ["pasta"]. %ya
 
 verbo(v(v2), primera, singular) --> ["camino"]. %ya
 verbo(v(v2), primera, plural) --> ["caminamos"]. %ya

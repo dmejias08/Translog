@@ -11,7 +11,7 @@ consulta():-
 
 clasificacion(X,Y):- X==Y.
 
-
+% Español a ingles
 consulta_leng(LENGUAJE):-
     clasificacion(LENGUAJE,1),
     writeln("Escriba frase"),
@@ -24,6 +24,7 @@ consulta_leng(LENGUAJE):-
     atom_string(ATOM, String),
     write(String).
 
+% Ingles a español
 consulta_leng(LENGUAJE):-
     clasificacion(LENGUAJE,2),
     writeln("Write down phrase"),
