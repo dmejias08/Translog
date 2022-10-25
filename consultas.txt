@@ -14,22 +14,29 @@ crear oraciones, nuevas con nuevas estructuras
 poblar la base de datos 
 
 * meter oraciones con preposiciones
+
+ella va hacia la escuela  she goes to the school 
+
+la comida esta en la mesa  the food is on the table #si tenemos tiempo
+
 * meter preguntas 
 * saludos 
-* signos de puntacion
 * poblar la base de datos
     - articulos 
     - preposiciones
     - verbos 
-    - pronombres
-    - auxiliares
-    - adjetivos
+    - pronombres 
+    - auxiliares 
+    - adjetivos 
     - adverbios 
 
 
 Por si tenemos tiempo:
 - Oraciones mas complejas como Maria se come una pizza
 - oracion y/o/pero oracion
+* signos de puntacion
 
 
+tratamiento de verbo to be
+pendiente adjetivos en ingles
 
