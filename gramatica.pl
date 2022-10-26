@@ -6,12 +6,16 @@ sentence(s(S,V,O)) --> nominal_predicate(S,NUM), verb(V,NUM), nominal_predicate(
 sentence(s(S,V)) --> nominal_predicate(S,NUM), verb(V,NUM).
 sentence(s(S)) --> nominal_predicate(S,NUM).
 sentence(s(S)) --> grettings(S).
+sentence(s(S)) --> question(S, NUM, PERS).
 sentence(s(S, F)) --> grettings(S), end_sign(F).
 sentence(s(I, S, F)) --> begin_sign(I), grettings(S), end_sign(F).
 
 % Cojunto de hechos base para formar un sintagma nominal
 nominal_predicate(det(A,S),NUM) --> modifier(A), noun(S,NUM).
-nominal_predicate(det(S),NUM) --> subjet(S,NUM).
+nominal_predicate(det(S), NUM, PERS) --> subjet(S,NUM,PERS).
+
+question(det(A, T, S), NUM, PERS) --> auxiliar(A), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
+question(det(A, Q, T, S), NUM, PERS) --> auxiliarEsp(A), quantifiers(Q), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 nominal_predicate(det(S),NUM) --> noun(S,NUM).
 
 % Conjunto de hechos con preposiciones

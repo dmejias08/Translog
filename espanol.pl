@@ -27,6 +27,21 @@ sujeto(suj(su6), m, tercera, singular) --> ["él"]. %ya
 sujeto(suj(su4), f, tercera, plural) --> ["ellas"]. %ya
 sujeto(suj(su4), m, tercera, plural) --> ["ellos"]. %ya
 
+sujeto(suj(su7), _, tercera, singular) --> [""]
+
+sujeto(suj(su8), m, tercera, singular) --> ["esto"].
+sujeto(suj(su8), f, tercera, singular) --> ["esta"].
+
+sujeto(suj(su9), m, tercera, singular) --> ["eso"].
+sujeto(suj(su9), f, tercera, singular) --> ["esa"].
+
+sujeto(suj(su10), m, tercera, plural) --> ["estos"].
+sujeto(suj(su10), f, tercera, plural) --> ["estas"].
+
+sujeto(suj(su11), m, tercera, plural) --> ["esos"]. %ya
+sujeto(suj(su11), f, tercera, plural) --> ["esas"]. %ya
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los sustantivos
 % del idioma español
@@ -71,6 +86,7 @@ verbo(v(v8), segunda, singular) --> ["es"]. %ya
 verbo(v(v8), segunda, plural) --> ["son"]. %ya
 verbo(v(v8), tercera, plural) --> ["son"]. %ya
 verbo(v(v7), tercera, singular) --> ["es"]. %ya
+
 
 signo_inicio(si(si1)) --> ["¡"].
 signo_inicio(si(si2)) --> ["¿"].
