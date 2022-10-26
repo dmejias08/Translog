@@ -23,7 +23,7 @@ tobe(t(tb2), plural, _) --> ["are"].
 tobe(t(tb3), singular,_) --> ["is"].
 
 
-subjet(suj(su1), singular, primera) --> ["i"].
+subjet(suj(su1), _, primera) --> ["i"].
 subjet(suj(su2), plural, primera) --> ["we"].
 subjet(suj(su3), _, second ) --> ["you"].
 subjet(suj(su4), plural, tercera) --> ["they"].

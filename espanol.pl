@@ -27,7 +27,7 @@ sujeto(suj(su6), m, tercera, singular) --> ["él"]. %ya
 sujeto(suj(su4), f, tercera, plural) --> ["ellas"]. %ya
 sujeto(suj(su4), m, tercera, plural) --> ["ellos"]. %ya
 
-sujeto(suj(su7), _, tercera, singular) --> [""]
+sujeto(suj(su7), _, tercera, singular) --> [""].
 
 sujeto(suj(su8), m, tercera, singular) --> ["esto"].
 sujeto(suj(su8), f, tercera, singular) --> ["esta"].
