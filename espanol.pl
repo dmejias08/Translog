@@ -27,7 +27,15 @@ sujeto(suj(su6), m, tercera, singular) --> ["él"]. %ya
 sujeto(suj(su4), f, tercera, plural) --> ["ellas"]. %ya
 sujeto(suj(su4), m, tercera, plural) --> ["ellos"]. %ya
 
-% sustantivo( IDEN, GEN, PERS, NUM)                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los sustantivos
+% del idioma español
+% sustantivo(IDEN, GEN, PERS, NUM)     
+% IDEN: Id unico para ese sustivo
+% GEN: género
+% PERS: persona 
+% NUM: singular o plural                     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sustantivo(sus(s1),f, tercera, singular) --> ["escuela"]. %ya
 sustantivo(sus(s2),m, tercera, singular) --> ["libro"]. %ya
 sustantivo(sus(s3),m, tercera, plural) --> ["perros"]. %ya
