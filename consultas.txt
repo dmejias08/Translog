@@ -15,13 +15,19 @@ crear oraciones, nuevas con nuevas estructuras
 poblar la base de datos 
 
 
-
-* meter preguntas 
+* meter preguntas  
 * saludos 
+- Pura vida
+- ¡hola!
+- todo bien 
+- Mae
+
+* si algo no lo encuentra sea textual - poner nombres 
+
 * oraciones con
     - articulos listo
     - preposiciones listo
-    - verbos listo
+    - verbos 
     - pronombres  listo
     - auxiliares 
     - adjetivos  listo

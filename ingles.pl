@@ -15,10 +15,10 @@ subjet(suj(su5), singular) --> ["she"].
 subjet(suj(su6), singular) --> ["he"].
 
 pronoun(suj(su1), _) --> ["mine"].
-pronoun(suj(su2), plural) --> ["our"].
+pronoun(suj(su2), plural) --> ["ours"].
 pronoun(suj(su3), plural) --> ["yours"].
 pronoun(suj(su4), plural) --> ["them"].
-pronoun(suj(su5), singular) --> ["her"].
+pronoun(suj(su5), singular) --> ["hers"].
 pronoun(suj(su6), singular) --> ["his"].
 
 noun(sus(s1),singular) --> ["school"]. 
