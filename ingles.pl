@@ -4,12 +4,33 @@ gretting(sal(f2), id2) --> ["hello"].
 modifier(a(art)) --> ["the"].
 modifier(a(art1)) --> ["a"].
 
-subjet(suj(su1), _) --> ["i"].
-subjet(suj(su2), plural) --> ["we"].
-subjet(suj(su3), plural) --> ["you"].
-subjet(suj(su4), plural) --> ["they"].
-subjet(suj(su5), singular) --> ["she"].
-subjet(suj(su6), singular) --> ["he"].
+auxiliarEsp(au(aux1)) --> ["how"].
+auxiliar(au(aux2)) --> ["when"].
+auxiliar(au(aux3)) --> ["what"].
+auxiliar(au(aux4)) --> ["where"].
+auxiliar(au(aux5)) --> ["why"].
+auxiliar(au(aux6)) --> ["which"].
+
+quantifiers(quant(qt1)) --> ["much"].
+quantifiers(quant(qt2)) --> ["many"].
+quantifiers(quant(qt3)) --> ["old"].
+
+tobe(t(tb1), singular, primera) --> ["am"].
+tobe(t(tb2), plural, _) --> ["are"].
+tobe(t(tb3), singular,_) --> ["is"].
+
+
+subjet(suj(su1), singular, primera) --> ["i"].
+subjet(suj(su2), plural, primera) --> ["we"].
+subjet(suj(su3), _, second ) --> ["you"].
+subjet(suj(su4), plural, tercera) --> ["they"].
+subjet(suj(su5), singular, tercera) --> ["she"].
+subjet(suj(su6), singular, tercera) --> ["he"].
+subjet(suj(su7), singular, tercera) --> ["it"].
+subjet(suj(su8), singular, tercera) --> ["this"].
+subjet(suj(su9), singular, tercera) --> ["that"].
+subjet(suj(su10), plural, tercera) --> ["these"].
+subjet(suj(su11), plural, tercera) --> ["those"].
 
 noun(sus(s1),singular) --> ["stone"]. 
 noun(sus(s2),singular) --> ["paper"]. 
