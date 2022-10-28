@@ -1,5 +1,11 @@
-gretting(sal(f1), id1) --> ["hello"].
-gretting(sal(f2), id2) --> ["hello"].
+gretting(sal(f1)) --> ["hello"].
+gretting(sal(f2)) --> ["hello"].
+gretting(sal(f3)) --> ["dude"].
+gretting(sal(f4)) --> ["bye"].
+getting(sal(f5)) --> ["good"], gretting_aux().
+gretting_aux() --> ["morning"].
+gretting(sal(f6)) --> ["good"], gretting_aux1().
+gretting_aux1() --> ["night"].
 
 modifier(a(art)) --> ["the"].
 modifier(a(art1)) --> ["a"].
@@ -21,7 +27,6 @@ quantifiers(quant(qt3)) --> ["old"].
 tobe(t(tb1), singular, primera) --> ["am"].
 tobe(t(tb2), plural, _) --> ["are"].
 tobe(t(tb3), singular,_) --> ["is"].
-
 
 subjet(suj(su1), _, primera) --> ["i"].
 subjet(suj(su2), plural, primera) --> ["we"].

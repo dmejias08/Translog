@@ -27,7 +27,8 @@ nominal_predicate(det(P,A,S,V),NUM) --> preposition(P), modifier(A), adjective(V
 nominal_predicate(det(A,S,V),NUM) --> modifier(A), adjective(V), noun(S,NUM).
 nominal_predicate(det(S,V),NUM) --> adjective(V), noun(S,NUM).
 
-grettings(sal(S, ID)) --> gretting(S, ID).
+grettings(sal(S)) --> gretting(S).
+grettings(sal(S, D)) --> gretting(S), gretting(D).
 
 % Español
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM), verbo(V,PERS,NUM), sintagma_nominal(O, _, _).
@@ -56,7 +57,8 @@ sintagma_nominal(det(S,A), PERS,NUM) --> sustantivo(S,GEN, PERS, NUM), adjetivo(
 sintagma_nominal(det(S,A), PERS,NUM) --> sujeto(S,GEN,PERS,NUM), adjetivo(A, PERS, NUM).
 
 
-saludos(sal(S, ID)) --> saludo(S, ID).
+saludos(sal(S)) --> saludo(S).
+saludos(sal(S, D)) --> saludo(S), saludo(D).
 
 
     

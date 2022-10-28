@@ -33,6 +33,9 @@ poblar la base de datos
     - adjetivos  listo
 
 
+FALTA
+return value 
+preguntas 
 
 
 Por si tenemos tiempo:

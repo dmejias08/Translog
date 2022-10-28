@@ -1,6 +1,13 @@
-saludo(sal(f1), id1) --> ["pura"], saludo_auxiliar(id1). %ya
+saludo(sal(f1)) --> ["pura"], saludo_auxiliar(ID). %ya
 saludo_auxiliar(id1) --> ["vida"]. %ya
-saludo(sal(f2), id2) --> ["hola"]. %ya
+saludo(sal(f2)) --> ["hola"]. %ya
+saludo(sal(f3)) --> ["mae"]. %ya
+saludo(sal(f4)) --> ["adios"]. %ya
+saludo(sal(f5)) --> ["buenos"], saludo_auxiliar1(ID). %ya
+saludo_auxiliar1(id1) --> ["dias"]. %ya
+saludo(sal(f6)) --> ["buenas"], saludo_auxiliar2(ID).
+saludo_auxiliar2(id1) --> ["noches"].
+
 
 articulo(a(art),f,singular) --> ["la"]. %ya
 articulo(a(art),m,singular) --> ["el"]. %ya
