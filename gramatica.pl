@@ -1,7 +1,8 @@
 :-[espanol].
 :-[ingles].
-
-% Ingles
+% ####################################################
+%                      Ingles
+% ####################################################
 sentence(s(S,V,O)) --> nominal_predicate(S,NUM), verb(V,NUM), nominal_predicate(O,_).
 sentence(s(S,V)) --> nominal_predicate(S,NUM), verb(V,NUM).
 sentence(s(S)) --> nominal_predicate(S,NUM).
@@ -12,7 +13,7 @@ sentence(s(I, S, F)) --> begin_sign(I), grettings(S), end_sign(F).
 
 % Cojunto de hechos base para formar un sintagma nominal
 nominal_predicate(det(A,S),NUM) --> modifier(A), noun(S,NUM).
-nominal_predicate(det(S), NUM, PERS) --> subjet(S,NUM,PERS).
+nominal_predicate(det(S), NUM) --> subjet(S,NUM,PERS).
 
 question(det(A, T, S), NUM, PERS) --> auxiliar(A), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 question(det(A, Q, T, S), NUM, PERS) --> auxiliarEsp(A), quantifiers(Q), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
@@ -27,10 +28,16 @@ nominal_predicate(det(P,A,S,V),NUM) --> preposition(P), modifier(A), adjective(V
 nominal_predicate(det(A,S,V),NUM) --> modifier(A), adjective(V), noun(S,NUM).
 nominal_predicate(det(S,V),NUM) --> adjective(V), noun(S,NUM).
 
+% Conjunto de hechos para saludos
 grettings(sal(S)) --> gretting(S).
 grettings(sal(S, D)) --> gretting(S), gretting(D).
 
-% Español
+
+% ####################################################
+%                     Español
+% ####################################################
+
+% Conjunto de hechos base para formar un sitagma nominal
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM), verbo(V,PERS,NUM), sintagma_nominal(O, _, _).
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM), verbo(V,PERS,NUM), sintagma_nominal(O, PERS1, NUM1).
 oracion(s(S,V)) --> sintagma_nominal(S,PERS,NUM), verbo(V,PERS,NUM).
@@ -41,7 +48,7 @@ oracion(s(S,V, O)) -->  signo_inicio(V), saludos(S), signo_finalizacion(O).
 
 % Conjunto de hechos base para formar un sitagma nominal
 sintagma_nominal(det(A,S), PERS,NUM) --> articulo(A,GEN,NUM), sustantivo(S,GEN, PERS, NUM).
-sintagma_nominal(det(A,S), PERS,NUM) --> sustantivo(S,GEN, PERS, NUM).
+sintagma_nominal(det(S), PERS,NUM) --> sustantivo(S,GEN, PERS, NUM).
 sintagma_nominal(det(S), PERS,NUM) --> sujeto(S,GEN,PERS,NUM).
 
 % Conjunto de hechos para sintagmas nominales con preposiciones

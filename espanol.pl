@@ -53,7 +53,7 @@ sujeto(suj(su11), f, tercera, plural) --> ["esas"]. %ya
 % Esta sección correspone los sustantivos
 % del idioma español
 % sustantivo(IDEN, GEN, PERS, NUM)     
-% IDEN: Id unico para ese sustivo
+% IDEN: Id  para ese sustivo
 % GEN: género
 % PERS: persona 
 % NUM: singular o plural                     
@@ -66,6 +66,15 @@ sustantivo(sus(s5), f, tercera, singular) --> ["camisa"]. %ya
 sustantivo(sus(s6),m, tercera, plural) --> ["libros"]. %ya
 sustantivo(sus(s7),m, tercera, singular) --> ["perro"]. %ya
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los verbos
+% del idioma español
+% sustantivo(IDEN, PERS, NUM)
+% IDEN: Id para ese verbo
+% PERS: persona 
+% NUM: singular o plural                     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 verbo(v(v2), primera, singular) --> ["camino"]. %ya
 verbo(v(v2), primera, plural) --> ["caminamos"]. %ya
 verbo(v(v2), segunda, singular) --> ["camina"]. %ya
@@ -93,6 +102,13 @@ verbo(v(v8), segunda, singular) --> ["es"]. %ya
 verbo(v(v8), segunda, plural) --> ["son"]. %ya
 verbo(v(v8), tercera, plural) --> ["son"]. %ya
 verbo(v(v7), tercera, singular) --> ["es"]. %ya
+
+verbo(v(v10), primera, singular) --> ["voy"]. 
+verbo(v(v10), primera, plural) --> ["vamos"]. 
+verbo(v(v10), segunda, singular) --> ["va"]. 
+verbo(v(v10), segunda, plural) --> ["van"]. 
+verbo(v(v10), tercera, plural) --> ["van"]. 
+verbo(v(v9), tercera, singular) --> ["va"]. 
 
 
 signo_inicio(si(si1)) --> ["¡"].

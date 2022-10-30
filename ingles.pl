@@ -30,7 +30,7 @@ tobe(t(tb3), singular,_) --> ["is"].
 
 subjet(suj(su1), _, primera) --> ["i"].
 subjet(suj(su2), plural, primera) --> ["we"].
-subjet(suj(su3), _, second ) --> ["you"].
+subjet(suj(su3), plural, segunda ) --> ["you"].
 subjet(suj(su4), plural, tercera) --> ["they"].
 subjet(suj(su5), singular, tercera) --> ["she"].
 subjet(suj(su6), singular, tercera) --> ["he"].
@@ -64,7 +64,10 @@ verb(v(v5), singular) --> ["runs"].
 verb(v(v6), plural) --> ["run"].
 
 verb(v(v7), singular) --> ["is"].
-verb(v(v6), plural) --> ["are"].
+verb(v(v8), plural) --> ["are"].
+
+verb(v(v9), singular) --> ["goes"].
+verb(v(v10), plural) --> ["go"].
 
 begin_sign(si(si1)) --> [""].
 begin_sign(si(si2)) --> [" "].

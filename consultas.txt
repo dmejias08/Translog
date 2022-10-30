@@ -2,21 +2,10 @@ hello -> hola ** no puede pasar a pura vida
 pura vida -> hello 
 una vida pura -> a life pure
 
-
-
-como lo cambio si el orden es invertido?
-
-no me esta sirviendo el signo inicial 
-
 objetivos
-
-crear oraciones, nuevas con nuevas estructuras
-
-poblar la base de datos 
-
-
+ 
 * meter preguntas  
-* saludos 
+* saludos - signos 
 - Pura vida
 - ¡hola!
 - todo bien 
@@ -46,12 +35,23 @@ Por si tenemos tiempo:
 
 
 
-
+ ORACIONES 
 oraciones que se me ocurren en el momento 
 
-ella va hacia la escuela  she goes to the school 
 
-la comida esta en la mesa  the food is on the table #si tenemos tiempo
+
+ART SUS 
+la comida esta en la mesa  the food is on the table - aun no se sabe
+
+##### ejemplos de oraciones ########
+Juan corre una maraton 
+coldplay canta bonito 
+
+
+
+
+
+
 
 
 tratamiento de verbo to be
