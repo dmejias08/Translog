@@ -24,8 +24,6 @@ sentence(s(S,V)) --> nominal_predicate(S,NUM), verbal_predicate(V, NUM).
 sentence(s(S)) --> nominal_predicate(S,NUM).
 sentence(s(S)) --> grettings(S).
 sentence(s(S)) --> question(S, NUM, PERS).
-sentence(s(S, F)) --> grettings(S), end_sign(F).
-sentence(s(I, S, F)) --> begin_sign(I), grettings(S), end_sign(F).
 
 % Hecho para formas sintagma verbal
 verbal_predicate(V, NUM) --> verb(V,NUM).
@@ -84,8 +82,6 @@ oracion(s(S,V)) --> sintagma_nominal(S,PERS,NUM, GEN), sintagma_verbal(V, PERS, 
 oracion(s(S)) --> pregunta(S, GEN, NUM, PERS).
 oracion(s(S)) --> sintagma_nominal(S,PERS,NUM, GEN).
 oracion(s(S)) --> saludos(S).
-oracion(s(S,V)) --> saludos(S), signo_finalizacion(V).
-oracion(s(S,V, O)) -->  signo_inicio(V), saludos(S), signo_finalizacion(O).
 
 % Hecho para sintagma verbal 
 sintagma_verbal(V, PERS, NUM) --> verbo(V,PERS,NUM).

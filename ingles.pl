@@ -258,27 +258,6 @@ verb(v(v39), singular) --> ["sees"]. % He /  She / It
 verb(v(v40), plural) --> ["see"]. % I / You / They /  We 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esta sección correspone a los signos de puntuacion iniciales
-% del idioma ingles
-% begin_sign(IDEN)      
-% IDEN: Id  para ese signo de puntuacion
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-begin_sign(si(si1)) --> [""].
-begin_sign(si(si2)) --> [" "].
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esta sección correspone a los signos de puntuacion finales
-% del idioma ingles
-% end_sign(IDEN)      
-% IDEN: Id  para ese signo de puntuacion
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-end_sign(sf(sf1)) --> ["!"].
-end_sign(sf(sf2)) --> ["?"].
-end_sign(sf(sf3)) --> ["."].
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone a las preposiciones
 % del idioma ingles
 % preposition(IDEN)      

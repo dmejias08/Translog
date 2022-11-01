@@ -103,7 +103,7 @@ sujeto(suj(su3), _, segunda, singular) --> ["usted"].
 sujeto(suj(su3), _, segunda, plural) --> ["ustedes"]. 
 
 sujeto(suj(su5), f, tercera, singular) --> ["ella"]. 
-sujeto(suj(su6), m, tercera, singular) --> ["él"]. 
+sujeto(suj(su6), m, tercera, singular) --> ["el"]. 
 sujeto(suj(su4), f, tercera, plural) --> ["ellas"]. 
 sujeto(suj(su4), m, tercera, plural) --> ["ellos"]. 
 
@@ -357,27 +357,6 @@ verbo(v(v40), segunda, singular) --> ["ve"]. % Usted (no se toma Vos / Tu)
 verbo(v(v40), segunda, plural) --> ["ven"]. % Ustedes (no se toma Vosotros)
 verbo(v(v40), tercera, plural) --> ["ven"]. % Ellos / Ellas
 verbo(v(v39), tercera, singular) --> ["ve"]. % El / Ella
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esta sección correspone los signos de puntuacion iniciales
-% del idioma español
-% signo_inicio(IDEN)
-% IDEN: Id para ese signo de puntuacion               
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-signo_inicio(si(si1)) --> ["¡"].
-signo_inicio(si(si2)) --> ["¿"].
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esta sección correspone los signos de puntuacion finales
-% del idioma español
-% signo_finalizacion(IDEN)
-% IDEN: Id para ese signo de puntuacion               
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-signo_finalizacion(sf(sf1)) --> ["!"].
-signo_finalizacion(sf(sf2)) --> ["?"].
-signo_finalizacion(sf(sf3)) --> ["."].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone las preposiciones
