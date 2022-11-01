@@ -1,13 +1,24 @@
+:-style_check(-singleton).
+
 % Agregar base de datos
 :-[espanol].
 :-[ingles].
 
-:-style_check(-singleton).
 
-% ####################################################
-%                      Ingles
-% ####################################################
+                                                % ####################################################
+                                                %                      Ingles
+                                                % ####################################################
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                % En la gramatica libre para ingles de contexto cada terminal 
+                                                % y no terminal tienen distintos parametros
+                                                % NUM: indica si es singular o plural
+                                                % PERS: indica que tipo de persona es (primera, segunda, tercera)  
+                                                % Las variables de una letra corresponde al 
+                                                % id de cada seccion de la gramatica  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Conjunto de hechos base para formar oraciones en ingles
 sentence(s(S,V,O)) --> nominal_predicate(S,NUM), verbal_predicate(V, NUM), nominal_predicate(O,_).
 sentence(s(S,V)) --> nominal_predicate(S,NUM), verbal_predicate(V, NUM).
 sentence(s(S)) --> nominal_predicate(S,NUM).
@@ -44,11 +55,24 @@ grettings(sal(S, D)) --> gretting(S), gretting(D).
 question(det(A, T, S), NUM, PERS) --> auxiliar(A), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 question(det(A, Q, T, S), NUM, PERS) --> auxiliarEsp(A), quantifiers(Q), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 
-% ####################################################
-%                     Español
-% ####################################################
+                                                        % ####################################################
+                                                        %                     Español
+                                                        % ####################################################
 
-% Conjunto de hechos base para formar un sitagma nominal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                        % Para la gramatica libre de contexto en español
+                                                        % cada terminal y no terminal tienen distintos parametros 
+                                                        % que se adaptan a sus reglas del lenguaje
+                                                        % PERS : el numero que indico el usuario             
+                                                        % NUM : el numero que indico el usuario             
+                                                        % GEN : el numero que indico el usuario
+                                                        % Las variables de una letra corresponde al 
+                                                        % id de cada seccion de la gramatica                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% Conjunto de hechos base para formar oraciones en español
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM, GEN), sintagma_verbal(V, PERS, NUM), sintagma_nominal(O, PERS1, NUM1,GEN).
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM, GEN), sintagma_verbal(V, PERS, NUM), sintagma_nominal(O, PERS, NUM, GEN).
 oracion(s(S,V,O)) --> sintagma_nominal(S,PERS,NUM, GEN), sintagma_verbal(V, PERS, NUM), sintagma_nominal(O, NUM, GEN).
