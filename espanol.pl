@@ -371,6 +371,8 @@ adjetivo(adj(adj3), f, singular) --> ["fea"].
 adjetivo(adj(adj3), m, singular) --> ["feo"].
 adjetivo(adj(adj3), f, plural) --> ["feas"].
 adjetivo(adj(adj3), m, plural) --> ["feos"].
-adjetivo(adj(adj4), m, plural) --> ["feliz"].
-adjetivo(adj(adj4), m, plural) --> ["alegre"].
+adjetivo(adj(adj4), _, singular) --> ["feliz"].
+adjetivo(adj(adj4), _, plural) --> ["felices"].
+adjetivo(adj(adj4), _, plural) --> ["alegres"].
+adjetivo(adj(adj4), _, singular) --> ["alegre"].
 adjetivo(adj(adj5), m, plural) --> ["rapido"].
