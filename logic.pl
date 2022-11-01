@@ -1,9 +1,10 @@
 :-[gramatica].
+:-style_check(-singleton).
 
 %Integracion 
 
-consulta():-
-    writeln("Para traducir en ingles digite 1 / To translate in spanish write 2 "),
+transLog():-
+    writeln("Para traducir en ingles digite 1 / To translate in spanish write 2 / To quit write 3"),
     read(LENGUAJE),
     consulta_leng(LENGUAJE).
 
@@ -36,4 +37,14 @@ consulta_leng(LENGUAJE):-
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
     write(String), !.
-        
+
+% Ingles a español
+consulta_leng(LENGUAJE):-
+    clasificacion(LENGUAJE,3),
+    writeln("Thank you, bye / Gracias, chao").
+
+
+% Consulta general en caso de fallo 
+consulta_leng(LENGUAJE):-
+    writeln("We did not understand try again / No entendimos la consulta intente de nuevo"),
+    transLog().
