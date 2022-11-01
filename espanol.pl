@@ -40,6 +40,52 @@ articulo(a(art4),f,plural) --> ["esas"].
 articulo(a(art4),m,plural) --> ["esos"]. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los auxiliares
+% del idioma ingles
+% auxiliar(IDEN)    
+% IDEN: Id  para ese auxiliar                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+auxiliares(au(aux),_,_) --> ["como"].
+auxiliares(au(aux1),m,singular) --> ["cuanto"].
+auxiliares(au(aux2),m,plural) --> ["cuantos"].
+auxiliares(au(aux1),f,singular) --> ["cuanta"].
+auxiliares(au(aux2),f,plural) --> ["cuantas"].
+auxiliares(au(aux4),_,_) --> ["cuando"].
+auxiliares(au(aux5),_,_) --> ["que"].
+auxiliares(au(aux6),_,_) --> ["donde"].
+auxiliares(au(aux7),_,_) --> ["por"], auxiliares_auxiliar2(ID).
+auxiliares(au(aux8),_,singular) --> ["cual"].
+auxiliares(au(aux8),_,plural) --> ["cuales"].
+auxiliares(au(aux9),_,singular) --> ["quien"].
+auxiliares(au(aux9),_,plural) --> ["quienes"].
+auxiliares_auxiliar2(id1) -->["que"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone al caso especial del verbo To Be
+% del idioma ingles
+% tobe(IDEN, PERS, NUM)      
+% IDEN: Id  para ese cuantificador
+% PERS: persona 
+% NUM: singular o plural                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ser(t(tb1), singular, primera) --> ["soy"].
+ser(t(tb2), plural, segunda) --> ["son"].
+ser(t(tb2), singular, segunda) --> ["esta"].
+ser(t(tb2), singular, tercera) --> ["esta"].
+ser(t(tb2), _, tercera) --> ["hay"].
+ser(t(tb3), singular, tercera) --> ["es"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los indicadores de lugar
+% del idioma español
+% modifier(IDEN)    
+% IDEN: Id  para ese determinante                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+indicador(in(ind1)) --> ["ahi"].
+indicador(in(ind2)) --> ["aqui"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los sujetos
 % del idioma español
 % sujeto(IDEN, GEN, PERS, NUM)     
