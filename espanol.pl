@@ -75,21 +75,21 @@ sujeto(suj(su10), f, tercera, plural) --> ["estas"].
 sujeto(suj(su11), m, tercera, plural) --> ["esos"]. 
 sujeto(suj(su11), f, tercera, plural) --> ["esas"].
 
-sujeto(suj(su12), _, tercera, singular) --> ["diana"].
-sujeto(suj(su13), _, tercera, singular) --> ["martinez"].
-sujeto(suj(su14), _, tercera, singular) --> ["kenichi"].
-sujeto(suj(su15), _, tercera, singular) --> ["garcia"].
-sujeto(suj(su16), _, tercera, singular) --> ["jesus"].
-sujeto(suj(su17), _, tercera, singular) --> ["costa rica"].
-sujeto(suj(su18), _, tercera, singular) --> ["cartago"].
-sujeto(suj(su19), _, tercera, singular) --> ["anuel"].
-sujeto(suj(su20), _, tercera, singular) --> ["badbunny"].
-sujeto(suj(su21), _, tercera, singular) --> ["messi"].
-sujeto(suj(su22), _, tercera, singular) --> ["cristiano"].
-sujeto(suj(su23), _, tercera, singular) --> ["google"].
-sujeto(suj(su24), _, tercera, singular) --> ["samsung"].
-sujeto(suj(su25), _, tercera, singular) --> ["papá"].
-sujeto(suj(su26), _, tercera, singular) --> ["mamá"].
+sujeto(suj(su12), f, tercera, singular) --> ["diana"].
+sujeto(suj(su13), m, tercera, singular) --> ["martinez"].
+sujeto(suj(su14), m, tercera, singular) --> ["kenichi"].
+sujeto(suj(su15), m, tercera, singular) --> ["garcia"].
+sujeto(suj(su16), m, tercera, singular) --> ["jesus"].
+sujeto(suj(su17), f, tercera, singular) --> ["costa rica"].
+sujeto(suj(su18), m, tercera, singular) --> ["cartago"].
+sujeto(suj(su19), m, tercera, singular) --> ["anuel"].
+sujeto(suj(su20), m, tercera, singular) --> ["badbunny"].
+sujeto(suj(su21), m, tercera, singular) --> ["messi"].
+sujeto(suj(su22), m, tercera, singular) --> ["cristiano"].
+sujeto(suj(su23), m, tercera, singular) --> ["google"].
+sujeto(suj(su24), m, tercera, singular) --> ["samsung"].
+sujeto(suj(su25), m, tercera, singular) --> ["papa"].
+sujeto(suj(su26), m, tercera, singular) --> ["mama"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los sustantivos
@@ -108,9 +108,11 @@ sustantivo(sus(s4), m, tercera, singular) --> ["perro"].
 sustantivo(sus(s5), m, tercera, singular) --> ["gato"]. 
 sustantivo(sus(s6), m, tercera, singular) --> ["brazo"]. 
 sustantivo(sus(s7), m, tercera, singular) --> ["edificio"]. 
-sustantivo(sus(s8), m, tercera, singular) --> ["pelo"]. 
-sustantivo(sus(s9), m, tercera, singular) --> ["bombillo"].
 
+sustantivo(sus(s8), m, tercera, singular) --> ["pelo"]. 
+sustantivo(sus(s8), m, tercera, singular) --> ["cabello"]. 
+
+sustantivo(sus(s9), m, tercera, singular) --> ["bombillo"].
 sustantivo(sus(s10), f, tercera, singular) --> ["mesa"]. 
 sustantivo(sus(s11), f, tercera, singular) --> ["vida"]. 
 sustantivo(sus(s12), f, tercera, singular) --> ["escuela"]. 
@@ -132,13 +134,36 @@ sustantivo(sus(s26), m, tercera, plural) --> ["anillos"].
 sustantivo(sus(s27), m, tercera, plural) --> ["cables"]. 
 
 sustantivo(sus(s28), f, tercera, plural) --> ["cucharas"].
+
 sustantivo(sus(s29), f, tercera, plural) --> ["mujeres"]. 
+sustantivo(sus(s29), f, tercera, plural) --> ["chicas"]. 
+
 sustantivo(sus(s30), f, tercera, plural) --> ["pastillas"]. 
+sustantivo(sus(s30), f, tercera, plural) --> ["pildoras"]. 
+
 sustantivo(sus(s31), f, tercera, plural) --> ["materias"]. 
 sustantivo(sus(s32), f, tercera, plural) --> ["fiestas"]. 
 sustantivo(sus(s33), f, tercera, plural) --> ["banderas"]. 
 sustantivo(sus(s34), f, tercera, plural) --> ["calculadoras"]. 
+
 sustantivo(sus(s35), f, tercera, plural) --> ["postales"]. 
+sustantivo(sus(s35), f, tercera, plural) --> ["calcomanias"]. 
+
+sustantivo(sus(s36), m, tercera, singular) --> ["carro"]. 
+sustantivo(sus(s36), m, tercera, singular) --> ["automovil"]. 
+
+sustantivo(sus(s37), m, tercera, plural) --> ["anteojos"]. 
+sustantivo(sus(s37), m, tercera, plural) --> ["gafas"]. 
+sustantivo(sus(s37), m, tercera, plural) --> ["lentes"]. 
+
+sustantivo(sus(s38), m, tercera, singular) --> ["pelota"]. 
+sustantivo(sus(s38), f, tercera, singular) --> ["bola"]. 
+
+sustantivo(sus(s39), m, tercera, singular) --> ["periodico"]. 
+
+sustantivo(sus(s40), m, tercera, singular) --> ["futbol"]. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los verbos
@@ -170,7 +195,7 @@ verbo(v(v6), segunda, plural) --> ["corren"]. % Ustedes (no se toma Vosotros)
 verbo(v(v6), tercera, plural) --> ["corren"]. % Ellos / Ellas
 verbo(v(v5), tercera, singular) --> ["corre"]. % El / Ella
 
-verbo(v(v8), primera, singular) --> ["soy"]. % Yo
+verbo(v(v41), primera, singular) --> ["soy"]. % Yo
 verbo(v(v8), primera, plural) --> ["somos"]. % Nosotros / Nosotras
 verbo(v(v8), segunda, singular) --> ["es"]. % Usted (no se toma Vos / Tu)
 verbo(v(v8), segunda, plural) --> ["son"]. % Ustedes (no se toma Vosotros)
@@ -323,6 +348,7 @@ preposiciones(p(p3)) --> ["con"].
 preposiciones(p(p4)) --> ["de"].
 preposiciones(p(p5)) --> ["en"].
 preposiciones(p(p6)) --> ["sobre"].
+preposiciones(p(p7)) --> ["a"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los adjetivos
@@ -345,3 +371,6 @@ adjetivo(adj(adj3), f, singular) --> ["fea"].
 adjetivo(adj(adj3), m, singular) --> ["feo"].
 adjetivo(adj(adj3), f, plural) --> ["feas"].
 adjetivo(adj(adj3), m, plural) --> ["feos"].
+adjetivo(adj(adj4), m, plural) --> ["feliz"].
+adjetivo(adj(adj4), m, plural) --> ["alegre"].
+adjetivo(adj(adj5), m, plural) --> ["rapido"].

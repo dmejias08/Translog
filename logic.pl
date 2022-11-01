@@ -1,15 +1,13 @@
 :-[gramatica].
 :-style_check(-singleton).
 
-%Integracion 
-
+% Integracion 
 transLog():-
-    writeln("Para traducir en ingles digite 1 / To translate in spanish write 2 / To quit write 3"),
+    writeln("Para traducir en ingles digite: 1 / To translate in spanish write 2 / To quit write 3 / Para finalizar digite 3"),
     read(LENGUAJE),
     consulta_leng(LENGUAJE).
 
-not(consulta_leng()):- write("Hello").
-
+% Ayuda a clasificar los statements entre ingles e español 
 clasificacion(X,Y):- X==Y.
 
 % Español a ingles
@@ -23,7 +21,9 @@ consulta_leng(LENGUAJE):-
     phrase(sentence(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String), !.
+    write("translog: "),
+    writeln(String),
+    transLog().
 
 % Ingles a español
 consulta_leng(LENGUAJE):-
@@ -32,11 +32,13 @@ consulta_leng(LENGUAJE):-
     read(FRASE),
     string_lower(FRASE, FRASE_MIN),
     split_string(FRASE_MIN, " ", " ", LIST),
-    phrase(sentence(A), LIST),
+    phrase(sentence(A), LIST),  
     phrase(oracion(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String), !.
+    write("translog: "),
+    writeln(String),
+    transLog().
 
 % Ingles a español
 consulta_leng(LENGUAJE):-

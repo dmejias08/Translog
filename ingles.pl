@@ -102,8 +102,8 @@ subjet(suj(su21), singular, tercera) --> ["messi"].
 subjet(suj(su22), singular, tercera) --> ["cristiano"].
 subjet(suj(su23), singular, tercera) --> ["google"].
 subjet(suj(su24), singular, tercera) --> ["samsung"].
-subjet(suj(su25), singular, tercera) --> ["papá"].
-subjet(suj(su26), singular, tercera) --> ["mamá"].
+subjet(suj(su25), singular, tercera) --> ["dad"].
+subjet(suj(su26), singular, tercera) --> ["mom"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone a los pronombres posesivos
@@ -152,7 +152,10 @@ noun(sus(s18), singular) --> ["light"].
 noun(sus(s19), plural) --> ["tractors"]. 
 noun(sus(s20), plural) --> ["dogs"]. 
 noun(sus(s21), plural) --> ["books"]. 
+
 noun(sus(s22), plural) --> ["men"]. 
+noun(sus(s22), plural) --> ["boys"]. 
+
 noun(sus(s23), plural) --> ["actors"]. 
 noun(sus(s24), plural) --> ["diamonds"]. 
 noun(sus(s25), plural) --> ["players"]. 
@@ -161,12 +164,26 @@ noun(sus(s27), plural) --> ["cables"].
 
 noun(sus(s28), plural) --> ["spoons"].
 noun(sus(s29), plural) --> ["women"]. 
+
 noun(sus(s30), plural) --> ["pills"]. 
+noun(sus(s30), plural) --> ["drugs"]. 
+
 noun(sus(s31), plural) --> ["subjects"]. 
 noun(sus(s32), plural) --> ["parties"]. 
 noun(sus(s33), plural) --> ["flags"]. 
 noun(sus(s34), plural) --> ["calculators"]. 
-noun(sus(s35), plural) --> ["stickers"]. 
+
+noun(sus(s35), plural) --> ["stickers"].
+
+noun(sus(s36), singular) --> ["car"]. 
+
+noun(sus(s37), plural) --> ["glasses"]. 
+
+noun(sus(s38), singular) --> ["ball"]. 
+
+noun(sus(s39), singular) --> ["newspaper"]. 
+
+noun(sus(s40), singular) --> ["soccer"]. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone a los verbos
@@ -186,7 +203,8 @@ verb(v(v5), singular) --> ["runs"]. % He /  She / It
 verb(v(v6), plural) --> ["run"]. % I / You / They /  We 
 
 verb(v(v7), singular) --> ["is"]. % He /  She / It
-verb(v(v8), plural) --> ["are"]. % I / You / They /  We 
+verb(v(v8), plural) --> ["are"]. % You / They /  We 
+verb(v(v41), plural) --> ["am"]. % I e 
 
 verb(v(v9), singular) --> ["goes"]. % He /  She / It
 verb(v(v10), plural) --> ["go"]. % I / You / They /  We 
@@ -280,4 +298,9 @@ preposition(p(p6)) --> ["about"].
 
 adjective(adj(adj1)) --> ["red"].
 adjective(adj(adj2)) --> ["pretty"].
+adjective(adj(adj2)) --> ["beatiful"].
 adjective(adj(adj3)) --> ["ugly"].
+adjective(adj(adj3)) --> ["horrible"].
+adjective(adj(adj4)) --> ["happy"].
+adjective(adj(adj4)) --> ["glad"].
+adjective(adj(adj5)) --> ["fast"].
