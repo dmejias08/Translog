@@ -37,29 +37,23 @@ modifier(a(art4)) --> ["those"].
 % IDEN: Id  para ese auxiliar                 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-auxiliarEsp(au(aux1)) --> ["how"].
-auxiliar(au(aux2)) --> ["when"].
-auxiliar(au(aux3)) --> ["what"].
-auxiliar(au(aux4)) --> ["where"].
-auxiliar(au(aux5)) --> ["why"].
-auxiliar(au(aux6)) --> ["which"].
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Esta sección correspone los cuantificadores
-% del idioma ingles
-% quantifiers(IDEN)    
-% IDEN: Id  para ese cuantificador                 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-quantifiers(quant(qt1)) --> ["much"].
-quantifiers(quant(qt2)) --> ["many"].
-quantifiers(quant(qt3)) --> ["old"].
+auxiliar(au(aux)) --> ["how"].
+auxiliar(au(aux1)) --> ["how"], auxiliar_auxiliar1(ID).
+auxiliar(au(aux2)) --> ["how"], auxiliar_auxiliar2(ID).
+auxiliar(au(aux4)) --> ["when"].
+auxiliar(au(aux5)) --> ["what"].
+auxiliar(au(aux6)) --> ["where"].
+auxiliar(au(aux7)) --> ["why"].
+auxiliar(au(aux8)) --> ["which"].
+auxiliar(au(aux9)) --> ["who"].
+auxiliar_auxiliar1(id1) -->["much"].
+auxiliar_auxiliar2(id1) -->["many"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone al caso especial del verbo To Be
 % del idioma ingles
 % tobe(IDEN, PERS, NUM)      
-% IDEN: Id  para ese cuantificador
+% IDEN: Id  para ese verbo
 % PERS: persona 
 % NUM: singular o plural                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -67,6 +61,15 @@ quantifiers(quant(qt3)) --> ["old"].
 tobe(t(tb1), singular, primera) --> ["am"].
 tobe(t(tb2), plural, _) --> ["are"].
 tobe(t(tb3), singular,_) --> ["is"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los indicadores de lugar
+% del idioma ingles
+% modifier(IDEN)    
+% IDEN: Id  para ese determinante                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+indicator(in(ind1)) --> ["there"].
+indicator(in(ind2)) --> ["here"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone a los sujetos

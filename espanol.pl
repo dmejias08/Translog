@@ -40,6 +40,52 @@ articulo(a(art4),f,plural) --> ["esas"].
 articulo(a(art4),m,plural) --> ["esos"]. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los auxiliares
+% del idioma ingles
+% auxiliar(IDEN)    
+% IDEN: Id  para ese auxiliar                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+auxiliares(au(aux),_,_) --> ["como"].
+auxiliares(au(aux1),m,singular) --> ["cuanto"].
+auxiliares(au(aux2),m,plural) --> ["cuantos"].
+auxiliares(au(aux1),f,singular) --> ["cuanta"].
+auxiliares(au(aux2),f,plural) --> ["cuantas"].
+auxiliares(au(aux4),_,_) --> ["cuando"].
+auxiliares(au(aux5),_,_) --> ["que"].
+auxiliares(au(aux6),_,_) --> ["donde"].
+auxiliares(au(aux7),_,_) --> ["por"], auxiliares_auxiliar2(ID).
+auxiliares(au(aux8),_,singular) --> ["cual"].
+auxiliares(au(aux8),_,plural) --> ["cuales"].
+auxiliares(au(aux9),_,singular) --> ["quien"].
+auxiliares(au(aux9),_,plural) --> ["quienes"].
+auxiliares_auxiliar2(id1) -->["que"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone al caso especial del verbo To Be
+% del idioma ingles
+% tobe(IDEN, PERS, NUM)      
+% IDEN: Id  para ese cuantificador
+% PERS: persona 
+% NUM: singular o plural                   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ser(t(tb1), singular, primera) --> ["soy"].
+ser(t(tb2), plural, segunda) --> ["son"].
+ser(t(tb2), singular, segunda) --> ["esta"].
+ser(t(tb2), singular, tercera) --> ["esta"].
+ser(t(tb2), _, tercera) --> ["hay"].
+ser(t(tb3), singular, tercera) --> ["es"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Esta sección correspone los indicadores de lugar
+% del idioma español
+% modifier(IDEN)    
+% IDEN: Id  para ese determinante                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+indicador(in(ind1)) --> ["ahi"].
+indicador(in(ind2)) --> ["aqui"].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los sujetos
 % del idioma español
 % sujeto(IDEN, GEN, PERS, NUM)     
@@ -163,8 +209,6 @@ sustantivo(sus(s39), m, tercera, singular) --> ["periodico"].
 
 sustantivo(sus(s40), m, tercera, singular) --> ["futbol"]. 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los verbos
 % del idioma español
@@ -195,7 +239,7 @@ verbo(v(v6), segunda, plural) --> ["corren"]. % Ustedes (no se toma Vosotros)
 verbo(v(v6), tercera, plural) --> ["corren"]. % Ellos / Ellas
 verbo(v(v5), tercera, singular) --> ["corre"]. % El / Ella
 
-verbo(v(v41), primera, singular) --> ["soy"]. % Yo
+verbo(v(v8), primera, singular) --> ["soy"]. % Yo
 verbo(v(v8), primera, plural) --> ["somos"]. % Nosotros / Nosotras
 verbo(v(v8), segunda, singular) --> ["es"]. % Usted (no se toma Vos / Tu)
 verbo(v(v8), segunda, plural) --> ["son"]. % Ustedes (no se toma Vosotros)
@@ -348,7 +392,6 @@ preposiciones(p(p3)) --> ["con"].
 preposiciones(p(p4)) --> ["de"].
 preposiciones(p(p5)) --> ["en"].
 preposiciones(p(p6)) --> ["sobre"].
-preposiciones(p(p7)) --> ["a"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los adjetivos
