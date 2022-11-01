@@ -10,7 +10,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 translog():-
-    writeln("Para traducir en ingles digite: 1 / To translate in spanish write 2 / To quit write 3 / Para finalizar digite 3"),
+    writeln("Para traducir en ingles digite: 1. / To translate in spanish write 2. / To quit write 3 / Para finalizar digite 3."),
     read(LENGUAJE),
     translog_lenguaje(LENGUAJE).
 
