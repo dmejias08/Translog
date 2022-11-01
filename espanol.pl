@@ -1,3 +1,5 @@
+:-style_check(-singleton).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los saludos
 % del idioma español
@@ -6,13 +8,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 saludo(sal(f1)) --> ["pura"], saludo_auxiliar(ID). 
-saludo_auxiliar(id1) --> ["vida"]. 
 saludo(sal(f2)) --> ["hola"]. 
 saludo(sal(f3)) --> ["mae"]. 
 saludo(sal(f4)) --> ["adios"]. 
 saludo(sal(f5)) --> ["buenos"], saludo_auxiliar1(ID). 
-saludo_auxiliar1(id1) --> ["dias"]. 
 saludo(sal(f6)) --> ["buenas"], saludo_auxiliar2(ID).
+saludo_auxiliar(id1) --> ["vida"]. 
+saludo_auxiliar1(id1) --> ["dias"]. 
 saludo_auxiliar2(id1) --> ["noches"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

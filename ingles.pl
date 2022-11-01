@@ -1,3 +1,5 @@
+:-style_check(-singleton).
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Esta sección correspone los saludos
 % del idioma ingles
@@ -9,9 +11,10 @@ gretting(sal(f1)) --> ["hello"].
 gretting(sal(f2)) --> ["hello"].
 gretting(sal(f3)) --> ["dude"].
 gretting(sal(f4)) --> ["bye"].
-getting(sal(f5)) --> ["good"], gretting_aux().
-gretting_aux() --> ["morning"].
+gretting(sal(f5)) --> ["good"], gretting_aux().
 gretting(sal(f6)) --> ["good"], gretting_aux1().
+
+gretting_aux() --> ["morning"].
 gretting_aux1() --> ["night"].
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

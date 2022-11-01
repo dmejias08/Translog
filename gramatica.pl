@@ -1,5 +1,10 @@
+
+% Agregar base de datos
 :-[espanol].
 :-[ingles].
+
+:-style_check(-singleton).
+
 % ####################################################
 %                      Ingles
 % ####################################################
@@ -14,9 +19,6 @@ sentence(s(I, S, F)) --> begin_sign(I), grettings(S), end_sign(F).
 % Cojunto de hechos base para formar un sintagma nominal
 nominal_predicate(det(A,S),NUM) --> modifier(A), noun(S,NUM).
 nominal_predicate(det(S), NUM) --> subjet(S,NUM,PERS).
-
-question(det(A, T, S), NUM, PERS) --> auxiliar(A), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
-question(det(A, Q, T, S), NUM, PERS) --> auxiliarEsp(A), quantifiers(Q), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 nominal_predicate(det(S),NUM) --> noun(S,NUM).
 
 % Conjunto de hechos con preposiciones
@@ -32,6 +34,9 @@ nominal_predicate(det(S,V),NUM) --> adjective(V), noun(S,NUM).
 grettings(sal(S)) --> gretting(S).
 grettings(sal(S, D)) --> gretting(S), gretting(D).
 
+% Conjunto de hechos para preguntas 
+question(det(A, T, S), NUM, PERS) --> auxiliar(A), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
+question(det(A, Q, T, S), NUM, PERS) --> auxiliarEsp(A), quantifiers(Q), tobe(T,NUM,PERS), subjet(S,NUM,PERS).
 
 % ####################################################
 %                     Español

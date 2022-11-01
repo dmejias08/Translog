@@ -1,13 +1,13 @@
 :-[gramatica].
 
-
 %Integracion 
 
 consulta():-
-    write("Para traducir en ingles digite 1 / To translate in spanish write 2 "),
+    writeln("Para traducir en ingles digite 1 / To translate in spanish write 2 "),
     read(LENGUAJE),
     consulta_leng(LENGUAJE).
 
+not(consulta_leng()):- write("Hello").
 
 clasificacion(X,Y):- X==Y.
 
@@ -22,7 +22,7 @@ consulta_leng(LENGUAJE):-
     phrase(sentence(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String).
+    write(String), !.
 
 % Ingles a español
 consulta_leng(LENGUAJE):-
@@ -35,5 +35,5 @@ consulta_leng(LENGUAJE):-
     phrase(oracion(A), RESULT),
     atomic_list_concat(RESULT, " ", ATOM),
     atom_string(ATOM, String),
-    write(String).
+    write(String), !.
         
