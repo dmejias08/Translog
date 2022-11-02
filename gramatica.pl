@@ -1,8 +1,8 @@
 :-style_check(-singleton).
 
 % Agregar base de datos
-:-[espanol].
-:-[ingles].
+:-[espanol_DB].
+:-[ingles_DB].
 
 
                                                 % ####################################################
